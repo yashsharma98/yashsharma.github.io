@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yash Sharma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav id="nav">
+      <a href="#" class="nav-logo">Yash Sharma</a>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="mailto:yasharma2324@gmail.com">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero-wrap" id="home">
+      <div class="hero-left">
+        <h1 class="hero-name">Yash Sharma</h1>
+        <p class="hero-role">
+          AI Engineer & Full Stack Developer
+        </p>
+        <p class="hero-desc">
+          AI Engineer  on building and deploying real-world systems, including GenAI applications, RAG pipelines, machine learning models, and full-stack web applications.
+        </p>
+        <div class="hero-cta">
+          <a
+            href="https://drive.google.com/drive/folders/1j5zBBKRBLHofjs9mbyCaPsMhm7dCQ1wz?usp=sharing"
+            target="_blank"
+            class="btn btn-primary">
+            Resume
+          </a>
+          <a
+            href="https://github.com/yashsharma98"
+            target="_blank"
+            class="btn btn-outline">
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/yashsharma2324"
+            target="_blank"
+            class="btn btn-outline">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile Photo -->
+      <div class="profile-col">
+        <div class="profile-wrap">
+          <img src="assets/profile.jpg" alt="Yash Sharma" class="loaded">
+        </div>
+        <div class="profile-name-card">
+          <div class="plocation">
+            Pune, India
+          </div>
+          <a href="mailto:yasharma2324@gmail.com" class="pemail">yasharma2324@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects">
+      <div class="section-wrap">
+        <div class="section-header">
+          <span class="section-label">Projects</span>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">
+              DocTrust AI
+              <span class="project-sub">Hybrid RAG with Hallucination Prevention</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/yashsharma98/doctrust-ai"
+                target="_blank"
+                class="project-link"
+                >GitHub</a
+              >
+              <a href="https://doctrust-ai.up.railway.app" target="_blank" class="project-link">Live Demo</a>
+            </div>
+          </div>
+          
+          <div class="project-image">
+            <img src="assets/DocTrustAI.png" alt="DocTrust AI" />
+          </div>
+
+          <p class="project-desc">
+            Multi-stage RAG pipeline for PDF-based document querying including BM25 and vector similarity combined via Reciprocal Rank Fusion for improved retrieval relevance, followed by cross-encoder reranking to refine chunks before LLM generation. A confidence scoring layer validates retrieval quality and filters low-context responses, reducing hallucinations. Integrated Gemini API with structured prompting and ChromaDB for document retrieval. Deployed on Railway.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">ChromaDB</span>
+            <span class="tag">Sentence Transformers</span>
+            <span class="tag">BM25</span>
+            <span class="tag">Cross-Encoder Reranking</span>
+            <span class="tag">Gemini API</span>
+            <span class="tag">Django</span>
+            <span class="tag">Railway</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">
+              Yummy Recipes
+              <span class="project-sub">Full-Stack Web Application with AI Integration</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/yashsharma98/yummyrecipes"
+                target="_blank"
+                class="project-link">
+                GitHub
+              </a>
+              <a
+                href="https://yummy-recipes-jfvg.onrender.com"
+                target="_blank"
+                class="project-link">
+                Live Demo
+              </a>
+            </div>
+          </div>
+
+          <div class="project-image">
+            <img src="assets/Recipe.png" alt="Yummy Recipes" />
+          </div>
+
+          <p class="project-desc">
+            Full-stack Django application with recipe discovery, user dashboards, and social interactions including authentication, notifications, and guest mode. Semantic search via vector embeddings, XGBoost cooking time prediction, and Gemini API for AI-powered recipe generation and summarization. Personalization features include time-based recommendations and a credit-based interaction model. Celery handles async embedding and search workflows; Redis for caching. Media on AWS S3. Deployed on Render.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Django</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Celery</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Docker</span>
+            <span class="tag">AWS S3</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">Gemini API</span>
+            <span class="tag">Vector Embeddings</span>
+            <span class="tag">Render</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-title">
+              Credit Risk Scoring
+              <span class="project-sub">Explainable AI System</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/yashsharma98/credit-risk-scoring-with-XAI"
+                target="_blank"
+                class="project-link">
+                GitHub
+              </a>
+              <a href="https://credit-risk-scoring-9k4y.onrender.com/" target="_blank" class="project-link">Live Demo</a>
+            </div>
+          </div>
+
+          <div class="project-image">
+            <img src="assets/Credit Risk Scoring.png" alt="Credit Risk Scoring" />
+          </div>
+
+          <p class="project-desc">
+            Trained and evaluated multiple classification models for credit risk prediction, achieving 80% accuracy with balanced precision and recall. Reduced input features from 27 to 12 using feature importance, with SHAP explainability surfacing feature-level impact per prediction. Qwen 2.5 LLM converts model outputs into plain-language explanations. Deployed as a Django application on Render with authentication and prediction history tracking.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">SHAP</span>
+            <span class="tag">Qwen 2.5</span>
+            <span class="tag">Django</span
+            <span class="tag">Render</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider-full skills-section" style="height: 1px"></div>
+
+    <!-- Skills -->
+    <div id="skills" class="skills-section">
+      <div class="section-wrap">
+        <div class="section-header">
+          <span class="section-label">Technical Skills</span>
+          <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <div class="skill-group-name">Languages</div>
+            <div class="skill-list">Python<br />SQL</div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-name">AI & GenAI</div>
+            <div class="skill-list">
+              RAG Pipelines<br />Semantic Search<br />BM25<br />Cross-Encoder<br />Sentence
+              Transformers<br />SHAP
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-name">LLMs & APIs</div>
+            <div class="skill-list">
+              Gemini API<br />OpenAI API<br />Qwen 2.5
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-name">Backend</div>
+            <div class="skill-list">
+              Django<br />REST APIs<br />Celery<br />Redis<br />PostgreSQL<br />ChromaDB
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-name">ML & Data</div>
+            <div class="skill-list">
+              Scikit-learn<br />XGBoost<br />Pandas<br />NumPy<br />Matplotlib<br />Seaborn
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-name">DevOps & Cloud</div>
+            <div class="skill-list">
+              Docker<br />AWS S3<br />Git / GitHub<br />Railway<br />Render
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider-full"></div>
+
+    <!-- About -->
+    <div id="about">
+      <!-- Added extra padding-bottom so the page doesn't end abruptly without a footer -->
+      <div class="section-wrap" style="padding-bottom: 120px;">
+        <div class="section-header">
+          <span class="section-label">About</span>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-text">
+          <p>
+            I'm an AI Engineer based in Pune, with a B.Tech in IT and a PG Diploma in Artificial Intelligence from CDAC Guwahati. I focus on building systems end-to-end — from model training and retrieval pipelines to backend infrastructure and deployment. I'm currently open to roles in AI engineering, machine learning, or full-stack development.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
